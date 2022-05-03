@@ -1,0 +1,129 @@
+body {
+    cursor: crosshair;
+    background-color:rgb(40, 40, 40)
+}
+/* ============================================================== */
+.fondpiano {
+    content: center;
+    margin: auto;
+    display: flex;
+    height: 600px;
+    width: 500px;
+}
+/* ============================================================== */
+.ligne {
+    display: flex;
+    bottom: 0;
+    display: flex;
+    height: 2px;
+    width: 600px;
+    background-color:blue;
+}
+/* ============================================================== */
+.colonne {
+
+    /* animation-name: animate1;
+    animation-duration: 7s;
+    animation-iteration-count:infinite; */
+    display: flex;
+    position: relative;
+    height: 600px;
+    border: solid white 2px;
+    width: 125px;
+}
+
+/* @keyframes animate1 {
+    0%   {border-color: rgb(255, 255, 255);}
+    20%  {border-color: yellow;}
+    40%  {border-color: blue;}
+    60% {border-color: green;}
+    80%  {border-color: pink;}
+    100%  {border-color: rgb(255, 255, 255);}
+} */
+
+/* ============================================================== */
+.tuiles {
+    animation-name: animate2;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    display: flex;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+@keyframes animate2 {
+    0%   {background-color: white;}
+    50%   {background-color: orange;}
+    100%   {background-color: red;}
+}
+
+#tuile {
+    left: 150px;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+}
+/* ============================================================== */
+.button {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+  
+.button:hover {
+    background-color: #555555;
+    color: white;
+}
+
+button:disabled,
+button[disabled]{
+    cursor: not-allowed;
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
+/* ============================================================== */
+.defaite {
+    z-index: 1;
+    display: flex;
+    width: 150px;
+    margin: auto;
+    margin-top: 300px;
+    background-color: black;
+    font-size: 5em;
+    justify-content: center;
+    color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+/* ============================================================== */
+.lignecheck {
+    z-index: 5;
+    margin: auto;
+    position: relative;
+    background-color: red;
+    width: 500px;
+    height: 3px;
+}
+/* ============================================================== */
+.score {
+    font-family: Georgia, serif;
+    right: 0;
+    color: white;
+}
+.timer {
+    font-family: Georgia, serif;
+    right: 0;
+    color: white;
+}
+/* ============================================================== */
+.loosed  {
+    font-family: serif;
+    position: fixed;
+    bottom: 0;
+    color:rgb(40, 40, 40)
+}
+/* ============================================================== */
